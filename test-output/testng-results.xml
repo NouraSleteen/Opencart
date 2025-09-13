@@ -2,24 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-10T15:55:59 GST" name="Default suite" finished-at="2025-09-10T15:56:05 GST" duration-ms="6510">
+  <suite started-at="2025-09-13T11:44:34 GST" name="Suite" finished-at="2025-09-13T11:44:41 GST" duration-ms="7282">
     <groups>
     </groups>
-    <test started-at="2025-09-10T15:55:59 GST" name="Default test" finished-at="2025-09-10T15:56:05 GST" duration-ms="6510">
+    <test started-at="2025-09-13T11:44:34 GST" name="Test" finished-at="2025-09-13T11:44:41 GST" duration-ms="7282">
       <class name="testClasses.TC_RegisterAccount">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testClasses.TC_RegisterAccount@7dcf94f8]" started-at="2025-09-10T15:55:59 GST" name="setup" finished-at="2025-09-10T15:56:01 GST" duration-ms="2476" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testClasses.TC_RegisterAccount@5bda8e08]" started-at="2025-09-13T11:44:34 GST" name="setup" finished-at="2025-09-13T11:44:37 GST" duration-ms="3125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="register()[pri:0, instance:testClasses.TC_RegisterAccount@7dcf94f8]" started-at="2025-09-10T15:56:01 GST" name="register" finished-at="2025-09-10T15:56:05 GST" duration-ms="3735" status="PASS">
+        <test-method signature="register()[pri:0, instance:testClasses.TC_RegisterAccount@5bda8e08]" started-at="2025-09-13T11:44:37 GST" name="register" finished-at="2025-09-13T11:44:41 GST" duration-ms="3972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.TC_RegisterAccount@7dcf94f8]" started-at="2025-09-10T15:56:05 GST" name="tearDown" finished-at="2025-09-10T15:56:05 GST" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.TC_RegisterAccount@5bda8e08]" started-at="2025-09-13T11:44:41 GST" name="tearDown" finished-at="2025-09-13T11:44:41 GST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testClasses.TC_RegisterAccount -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

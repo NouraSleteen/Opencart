@@ -19,15 +19,21 @@ public class TC_RegisterAccount extends TestBaseClass {
 	@Test
 	public void register() throws InterruptedException
 	{
+		logger.info("*** Starting TC_RegisterAccount***");
 		
-		
+		try
+		{
 		home= new HomePage(driver);
 		home.account();
+		logger.info("Clicked on My Account");
 		home.register();
+		logger.info("Clicked on Regiser");
 		Thread.sleep(2000);
+		
+		logger.info("*** Starting TC_RegisterAccount***");
 		//for the web edition 
 		
-	/*	RegistertionPage reg = new RegistertionPage(driver);
+	/*	reg = new RegistertionPage(driver);
 		
 		reg.username(getRandomAlphabetic(6));
 		reg.firstname(getRandomAlphabetic(6).toUpperCase());
@@ -41,6 +47,7 @@ public class TC_RegisterAccount extends TestBaseClass {
 		
 		// For local host edition
           reg = new 	RegisterationPageLocl(driver);
+          logger.info("Providing Customer Details");
           
           reg.firstname(getRandomAlphabetic(5).toUpperCase());
   	
@@ -55,11 +62,28 @@ public class TC_RegisterAccount extends TestBaseClass {
           reg.agreement();
       	
           reg.registerbtn();
-       	
-          String msgconf = reg.confirm_msg();
-         	
-  		 Assert.assertEquals(msgconf, "Your Account Has Been Created!");
-					
+          logger.info("Validating the result");
+          String msgconf = reg.confirm_msg();  	
+          if(msgconf.equals("Your Account Has Been Created!"))
+          {
+        	  Assert.assertTrue(true);
+          }
+          
+          else
+          {  	  
+      		  logger.error("test failed..");
+      		  logger.debug("Debug logs....");
+      		  Assert.assertTrue(false);
+          }
+          
+		}
+		catch(Exception e)
+		{
+			Assert.fail();
+		}
+  		  
+  		
+          logger.info("Finishing the registration");
 	}
 
 }
