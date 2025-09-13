@@ -14,9 +14,7 @@ public class RegisterationPageLocl extends BasePage {
 
 	}
 
-
 	//Locators
-	
 
 	@FindBy(xpath="//*[@id=\"input-firstname\"]")
 	WebElement txt_firstname ;

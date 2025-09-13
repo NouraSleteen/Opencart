@@ -22,7 +22,7 @@ public class HomePage extends BasePage{
 	
 	@FindBy(linkText = "My Account") private  WebElement accountlink ;
 	@FindBy(linkText = "Register") private  WebElement registerlink;
-	
+	@FindBy(linkText = "Login") private  WebElement loginlink;
 	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	
 	//Methods
@@ -39,5 +39,10 @@ public class HomePage extends BasePage{
 		wait.until(ExpectedConditions.elementToBeClickable(registerlink)).click();
 	}
 	
-
+	public void  login()
+	{
+		//registerlink.click();
+		wait.until(ExpectedConditions.elementToBeClickable(loginlink)).click();
+	}
+	
 }

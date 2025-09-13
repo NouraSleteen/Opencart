@@ -5,7 +5,8 @@
   <parameter name="os" value="Windows"/>
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testClasses.TC_RegisterAccount"/>
+     <!-- <class name="testClasses.TC_RegisterAccount"/> -->
+       <class name="testClasses.TC_LoginPage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
