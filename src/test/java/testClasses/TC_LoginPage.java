@@ -13,7 +13,7 @@ public class TC_LoginPage  extends TestBaseClass{
 	public HomePage home;
 	public LoginPage lp;
 	public MyAccountPage map;
-	@Test
+	@Test(groups={"sanity", "master"})
 	public void login()
 	{
 		

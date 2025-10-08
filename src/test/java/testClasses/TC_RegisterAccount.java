@@ -16,7 +16,7 @@ public class TC_RegisterAccount extends TestBaseClass {
 	public RegisterationPageLocl reg;
 
 	
-	@Test
+	@Test(groups={"regression", "master"})
 	public void register() throws InterruptedException
 	{
 		logger.info("*** Starting TC_RegisterAccount***");
