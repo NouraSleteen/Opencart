@@ -20,13 +20,12 @@ public class UtilityFile {
 	public static XSSFRow row;
 	public static XSSFCell cell;
 	String file;
-	
-	public UtilityFile(String file)
-	{
-		this.file=file;
+
+	public UtilityFile(String file) {
+		this.file = file;
 	}
 
-	public  int getRowCount( String sheet) throws IOException {
+	public int getRowCount(String sheet) throws IOException {
 		fi = new FileInputStream(file);
 		workbook = new XSSFWorkbook(fi);
 		wsheet = workbook.getSheet(sheet);
@@ -36,7 +35,7 @@ public class UtilityFile {
 		return rowcount;
 	}
 
-	public  int getCellCount( String sheet, int rownum) throws IOException {
+	public int getCellCount(String sheet, int rownum) throws IOException {
 		fi = new FileInputStream(file);
 		workbook = new XSSFWorkbook(fi);
 		wsheet = workbook.getSheet(sheet);
@@ -48,26 +47,22 @@ public class UtilityFile {
 
 	}
 
-	public  String getCellData(String sheet, int rownum, int colom) throws IOException {
+	public String getCellData(String sheet, int rownum, int colom) throws IOException {
 		fi = new FileInputStream(file);
 		workbook = new XSSFWorkbook(fi);
 		wsheet = workbook.getSheet(sheet);
 		row = wsheet.getRow(rownum);
-		/*if (row == null) {
-			workbook.close();
-			return "";
-		}*/
+		/*
+		 * if (row == null) { workbook.close(); return ""; }
+		 */
 
-	   cell = row.getCell(colom);
-       DataFormatter formatter = new DataFormatter();
+		cell = row.getCell(colom);
+		DataFormatter formatter = new DataFormatter();
 		String data;
-		try
-		{
+		try {
 			data = formatter.formatCellValue(cell);
-		}
-		catch(Exception e)
-		{
-			data="";
+		} catch (Exception e) {
+			data = "";
 		}
 		workbook.close();
 		fi.close();
@@ -76,22 +71,21 @@ public class UtilityFile {
 
 	// Update cell data
 
-	public  void setCellData( String sheet, int rownum, int colom, String data) throws IOException {
-		File xfile = new File (file);
-		if(!xfile.exists())
-		{
+	public void setCellData(String sheet, int rownum, int colom, String data) throws IOException {
+		File xfile = new File(file);
+		if (!xfile.exists()) {
 			workbook = new XSSFWorkbook();
 			fo = new FileOutputStream(file);
 			workbook.write(fo);
 		}
-		
+
 		fi = new FileInputStream(file);
 		workbook = new XSSFWorkbook(fi);
-		if(workbook.getSheetIndex(sheet)==-1)
+		if (workbook.getSheetIndex(sheet) == -1)
 			workbook.createSheet(sheet);
 		wsheet = workbook.getSheet(sheet);
-	  if(wsheet.getRow(rownum)==null)
-		  wsheet.createRow(rownum);
+		if (wsheet.getRow(rownum) == null)
+			wsheet.createRow(rownum);
 		row = wsheet.getRow(rownum);
 		cell = row.createCell(colom);
 		cell.setCellValue(data);
