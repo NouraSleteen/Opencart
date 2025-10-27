@@ -5558,3 +5558,111 @@ Session ID: a4197d4a96253171b79830db09ef6941
 2025-10-13 23:56:07.944 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
 2025-10-13 23:56:08.330 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
 2025-10-13 23:56:08.783 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-10-18 14:30:27.547 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-18 14:30:27.670 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-18 14:30:28.123 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-18 14:30:28.135 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-18 14:30:28.723 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-18 14:30:29.594 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-20 15:16:44.007 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-20 15:16:44.134 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-20 15:16:44.579 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-20 15:16:44.591 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-20 15:16:45.176 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-20 15:16:46.123 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-20 15:16:48.843 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-10-20 15:16:49.243 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-10-20 15:16:49.778 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-10-20 15:16:50.584 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-10-21 22:53:46.006 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 22:53:46.201 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-21 22:53:46.847 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-21 22:53:46.855 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-21 22:53:48.336 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-21 22:53:48.389 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-21 22:53:51.422 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-10-21 22:53:51.916 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-10-21 22:53:53.219 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-10-21 22:53:53.289 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-10-21 23:00:01.752 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 23:00:01.916 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-21 23:00:03.836 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-21 23:00:03.844 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-21 23:00:10.666 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-21 23:00:10.728 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-21 23:00:13.764 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-10-21 23:00:14.405 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-10-21 23:00:15.792 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-10-21 23:00:15.868 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-10-21 23:00:48.405 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 23:00:48.542 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-21 23:00:49.181 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-21 23:00:49.186 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-21 23:00:49.864 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-21 23:00:50.796 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-21 23:00:52.967 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-10-21 23:00:53.439 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-10-21 23:00:54.872 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-10-21 23:00:54.950 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-10-21 23:04:41.098 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 23:04:41.294 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-21 23:04:41.909 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-21 23:04:41.920 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-21 23:04:43.644 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-21 23:04:43.705 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-21 23:04:46.298 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-10-21 23:04:46.744 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-10-21 23:04:48.386 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-10-21 23:04:48.456 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-10-21 23:05:11.688 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 23:05:11.863 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-21 23:05:12.440 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-21 23:05:12.450 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-21 23:05:14.055 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-21 23:05:14.121 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-21 23:05:16.715 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-10-21 23:05:17.154 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-10-21 23:05:17.675 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-10-21 23:05:18.559 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-10-21 23:09:27.683 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 23:09:27.851 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-21 23:09:28.306 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-21 23:09:28.317 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-21 23:09:30.025 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-21 23:09:30.077 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-21 23:09:51.098 [TestNG-tests-2] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 23:09:54.603 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 23:09:54.720 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-21 23:09:55.199 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-21 23:09:55.203 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-21 23:09:56.664 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-21 23:09:56.726 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-21 23:30:27.453 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-21 23:30:27.571 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-21 23:30:28.036 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-21 23:30:28.042 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-21 23:30:30.113 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-21 23:30:30.214 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-21 23:30:31.443 [TestNG-tests-2] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-26 11:00:48.188 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-26 11:00:48.354 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-26 11:00:48.867 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-26 11:00:48.877 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-26 11:00:51.088 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-10-26 11:00:51.152 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-10-26 11:00:53.760 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-10-26 11:00:54.195 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-10-26 11:00:54.799 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-10-26 11:00:55.746 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-10-26 11:01:18.155 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-26 11:01:18.454 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-26 11:01:20.413 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-26 11:01:20.424 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-26 11:01:21.116 [TestNG-tests-2] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-26 11:01:31.226 [TestNG-tests-2] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-26 11:01:32.145 [TestNG-tests-2] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-10-26 11:01:32.148 [TestNG-tests-2] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-10-26 11:11:27.111 [TestNG-tests-2] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-26 11:11:27.348 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-10-26 11:11:27.507 [TestNG-tests-2] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-10-26 11:11:27.593 [TestNG-tests-1] INFO  testClasses.TC_RegisterAccount - Clicked on My Account

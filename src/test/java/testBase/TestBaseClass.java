@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -16,6 +17,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,6 +25,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -35,8 +39,8 @@ public class TestBaseClass {
 	public Properties p;
 
 	@BeforeClass(groups = { "regression", "sanity", "master", "ddt" })
-	@Parameters({ "browser" })
-	public void setup(String br) throws IOException {
+	@Parameters({ "os", "browser" })
+	public void setup(String os, String br) throws IOException {
 		FileInputStream configfile = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties");
 		p = new Properties();
@@ -45,28 +49,64 @@ public class TestBaseClass {
 
 		logger = LogManager.getLogger(this.getClass());
 
-		// local environment
-		switch (br.toLowerCase()) {
-		case "chrome":
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--guest");
-			HashMap<String, Object> prefs = new HashMap<>();
-			prefs.put("credentials_enable_service", false);
-			prefs.put("profile.password_manager_enabled", false);
-			options.setExperimentalOption("prefs", prefs);
+		// remote environment
+		if (p.getProperty("execution_env").equalsIgnoreCase("remote")) {
+			DesiredCapabilities cap = new DesiredCapabilities();
 
-			driver = new ChromeDriver(options);
-			break;
-		case "edge":
-			driver = new EdgeDriver();
-			break;
-		case "firefox":
-			driver = new FirefoxDriver();
-			break;
-		default:
-			throw new SkipException("Invalid browser: " + br);
+			// os
+
+			if (os.equalsIgnoreCase("windows")) {
+				cap.setPlatform(Platform.WINDOWS);
+				cap.setBrowserName(br);
+			} else if (os.equalsIgnoreCase("mac")) {
+				cap.setPlatform(Platform.MAC);
+			} else {
+				System.out.println("no matching os ");
+				return;
+			}
+
+			// browser
+			switch (br.toLowerCase()) {
+			case "chrome":
+				cap.setBrowserName("chrome");
+				break;
+			case "edge":
+				cap.setBrowserName("MicrosoftEdge");
+				break;
+			default:
+				System.out.print("no matching browser");
+				return;
+			}
+
+			driver = new RemoteWebDriver(new URL("http://10.104.71.179:4444/wd/hub"), cap);
+
 		}
 
+		// local environment
+		if (p.getProperty("execution_env").equalsIgnoreCase("local"))
+
+		{
+			switch (br.toLowerCase()) {
+			case "chrome":
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--guest");
+				HashMap<String, Object> prefs = new HashMap<>();
+				prefs.put("credentials_enable_service", false);
+				prefs.put("profile.password_manager_enabled", false);
+				options.setExperimentalOption("prefs", prefs);
+
+				driver = new ChromeDriver(options);
+				break;
+			case "edge":
+				driver = new EdgeDriver();
+				break;
+			case "firefox":
+				driver = new FirefoxDriver();
+				break;
+			default:
+				throw new SkipException("Invalid browser: " + br);
+			}
+		}
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();

@@ -5,7 +5,7 @@
 	<listeners>
 		<listener class-name="utilities.ExtentReportManager" />
 	</listeners>
-	<test name="ChromsTest">
+	<test name="ChromeTest">
 		<parameter name="os" value="Windows" />
 		<parameter name="browser" value="chrome" />
 		<classes>
@@ -13,9 +13,9 @@
 		</classes>
 	</test> <!-- Test -->
 
-	<test name="FirefoxTest">
+	<test name="EdgeTest">
 		<parameter name="os" value="Windows" />
-		<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="testClasses.TC_RegisterAccount" />
 		</classes>
