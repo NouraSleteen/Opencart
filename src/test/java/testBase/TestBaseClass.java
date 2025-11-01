@@ -55,30 +55,33 @@ public class TestBaseClass {
 
 			// os
 
-			if (os.equalsIgnoreCase("windows")) {
+			if (os.equalsIgnoreCase("windows"))
+			{
 				cap.setPlatform(Platform.WINDOWS);
-				cap.setBrowserName(br);
-			} else if (os.equalsIgnoreCase("mac")) {
+			} 
+			else if (os.equalsIgnoreCase("linux"))
+			{
+				cap.setPlatform(Platform.LINUX);
+			}
+			else if (os.equalsIgnoreCase("mac"))
+			{
 				cap.setPlatform(Platform.MAC);
-			} else {
+			} else 
+			{
 				System.out.println("no matching os ");
 				return;
 			}
 
 			// browser
 			switch (br.toLowerCase()) {
-			case "chrome":
-				cap.setBrowserName("chrome");
-				break;
-			case "edge":
-				cap.setBrowserName("MicrosoftEdge");
-				break;
-			default:
-				System.out.print("no matching browser");
+			case "chrome": cap.setBrowserName("chrome"); break;
+			case "edge": cap.setBrowserName("MicrosoftEdge"); break;
+			case "firefox": cap.setBrowserName("firefox"); break;
+			default: System.out.print("no matching browser");
 				return;
 			}
 
-			driver = new RemoteWebDriver(new URL("http://10.104.71.179:4444/wd/hub"), cap);
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 
 		}
 
