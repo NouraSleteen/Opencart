@@ -5735,3 +5735,23 @@ Session ID: a4197d4a96253171b79830db09ef6941
 2025-11-01 11:42:27.104 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
 2025-11-01 11:42:28.397 [main] INFO  testClasses.TC_LoginPage - Validating the result
 2025-11-01 11:42:28.485 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-11-02 10:50:12.417 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-11-02 10:50:13.353 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-11-02 10:50:14.395 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-11-02 10:50:14.401 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-11-02 10:50:16.679 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-11-02 10:50:16.778 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-11-02 10:50:19.347 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-11-02 10:50:19.909 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-11-02 10:50:21.838 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-11-02 10:50:22.117 [main] INFO  testClasses.TC_LoginPage - Finishing the login
+2025-11-02 10:50:38.724 [main] INFO  testClasses.TC_RegisterAccount - *** Starting TC_RegisterAccount***
+2025-11-02 10:50:39.214 [main] INFO  testClasses.TC_RegisterAccount - Clicked on My Account
+2025-11-02 10:50:40.099 [main] INFO  testClasses.TC_RegisterAccount - Clicked on Regiser
+2025-11-02 10:50:40.101 [main] INFO  testClasses.TC_RegisterAccount - Providing Customer Details
+2025-11-02 10:50:43.361 [main] INFO  testClasses.TC_RegisterAccount - Validating the result
+2025-11-02 10:50:43.519 [main] INFO  testClasses.TC_RegisterAccount - Finishing the registration
+2025-11-02 10:50:52.698 [main] INFO  testClasses.TC_LoginPage - *** TC_LoginPage***
+2025-11-02 10:50:53.891 [main] INFO  testClasses.TC_LoginPage - Providing Customer credential  login
+2025-11-02 10:50:55.703 [main] INFO  testClasses.TC_LoginPage - Validating the result
+2025-11-02 10:50:55.822 [main] INFO  testClasses.TC_LoginPage - Finishing the login
